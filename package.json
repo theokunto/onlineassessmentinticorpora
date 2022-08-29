@@ -1,0 +1,26 @@
+{
+  "name": "ictrank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.9",
+    "@chakra-ui/react": "^2.2.9",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "axios": "^0.27.2",
+    "framer-motion": "^7.2.1",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build"
+  },
+  "author": "theofilus",
+  "license": "MIT"
+}
