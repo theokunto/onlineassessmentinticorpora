@@ -20,13 +20,22 @@ const A01 = () => {
                     setIsOnline(true)
                     toast({
                         title: "URL Tested",
-                        description: "The Url is Online, go ahead !",
+                        description: "The URL is Online, go ahead !",
                         status: "success",
                         duration: 2000,
                         isClosable: true,
                     })
                 }
-                else setIsOnline(false)
+                else {
+                    toast({
+                        title: "URL Tested",
+                        description: "The URL is Offline, please stanby !",
+                        status: "error",
+                        duration: 2000,
+                        isClosable: true,
+                    })
+                    setIsOnline(false)
+                }
             }).catch(() => setIsOnline(false))
     };
     async function copyClipBoard() {
