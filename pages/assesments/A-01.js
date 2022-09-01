@@ -16,7 +16,16 @@ const A01 = () => {
         axios.get(URLTEST)
             .then((res) => {
                 console.log(res)
-                if (res.status === 200) setIsOnline(true)
+                if (res.status === 200) {
+                    setIsOnline(true)
+                    toast({
+                        title: "URL Tested",
+                        description: "The Url is Online, go ahead !",
+                        status: "success",
+                        duration: 2000,
+                        isClosable: true,
+                    })
+                }
                 else setIsOnline(false)
             }).catch(() => setIsOnline(false))
     };
@@ -41,7 +50,10 @@ const A01 = () => {
                     <Button colorScheme="green" variant="solid" size={"xs"} onClick={() => {
                         copyClipBoard()
                     }} mr="2">Copy</Button>
-                    <Button leftIcon={<MdPlayArrow />} colorScheme="orange" variant="outline" size={"xs"} onClick={() => testApi()}>Test</Button>
+                    <Button leftIcon={<MdPlayArrow />} colorScheme="orange" variant="outline" size={"xs"} onClick={() => {
+                        testApi()
+                        
+                        }}>Test</Button>
                     {isOnline != undefined ? isOnline ? <span style={{ color: 'green', marginLeft: '0.5rem' }}>online</span> : <span style={{ color: 'red', marginLeft: '0.5rem' }}>offline</span> : <></>}
                     <Paragraph>{URLTEST}</Paragraph>
                 </ListItem>
