@@ -57,13 +57,13 @@ const A01 = () => {
                 <li style={{ marginBottom: '1rem' }}> Buat aksi dalam Tabel sesuai kondisi berikut :
                     <ul>
                         <li>
-                            Tipe account D hanya ada aksi Hapus.
+                            Tipe account D ada tombol Hapus dan fungsi nya.
                         </li>
                         <li>
-                            Tipe account C ada aksi Ubah dan Hapus.
+                            Tipe account C ada tombol Ubah dan Hapus serta fungsi - fungsi nya.
                         </li>
                         <li>
-                            Tipe account selain D dan C tidak ada aksi Ubah dan Hapus.
+                            Tipe account selain D dan C tidak ada tombol apapun.
                         </li>
                     </ul>
                 </li>
