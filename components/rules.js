@@ -45,12 +45,14 @@ const Rules = () => {
                     <li style={{marginBottom: '1rem'}}>Selama " Live Coding Test " dimohon untuk "share full screen"
                         dalam Microsoft Teams atau Google Meet dll
                     </li>
-                    <li style={{marginBottom: '1rem'}}>Gunakan ReactJs</li>
-                    <li style={{marginBottom: '1rem'}}>Dibebaskan untuk menggunakan Framework CSS apapun, ex: Bootstrap,
-                        Material UI , ANT Design
+                    <li style={{marginBottom: '1rem'}}>Gunakan ReactJs ! (20pts)</li>
+                    <li style={{marginBottom: '1rem'}}>Dibebaskan menggunakan package storage management apapun, ex: Zustand, redux, dll. (20pts)
                     </li>
-                    <li style={{marginBottom: '1rem'}}>Diperbolehkan membaca dokumen dokumen pada internet.</li>
-                    <li style={{marginBottom: '1rem'}}>Waktu pengerjaan anda 45 menit.</li>
+                    <li style={{marginBottom: '1rem'}}>Dibebaskan untuk menggunakan Framework CSS apapun, ex: Bootstrap,
+                        Material UI , ANT Design. (20pts)
+                    </li>
+                    <li style={{marginBottom: '1rem'}}>Diperbolehkan membaca dokumen pada internet. Jangan gunakan platform AI. ex: Chat GPT, Gemini, dll. </li>
+                    <li style={{marginBottom: '1rem'}}>Waktu pengerjaan anda 60 menit. (20pts)</li>
                 </ol>
             </Container>
         </Section>

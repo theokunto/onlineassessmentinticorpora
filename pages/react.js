@@ -7,7 +7,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import Layout from "../components/layouts/assessment";
 
-const URLTEST = 'https://my-json-server.typicode.com/arif2fast/testRest/cifAccount'
+const URLTEST = 'https://my-json-server.typicode.com/theokunto/testjson/db'
 const Page = () => {
     const [isOnline, setIsOnline] = useState();
     const toast = useToast();
@@ -83,7 +83,40 @@ const Page = () => {
                     </List>
                     <ol style={{marginLeft: "2rem"}}>
                         <li style={{marginBottom: '1rem'}}> Buat tabel dari data object accountList dengan header Branch
-                            Number, Account No, Account Name, Action.
+                            Number, Account No, Account Name, Account Type, Action.
+                        </li>
+                        <li style={{ marginBottom: '1rem' }}>
+                            Data tabel diambil dari <code>payload.accountList</code> dengan ketentuan mapping kolom sebagai berikut:
+                            <ul>
+                                <li>
+                                    <strong>Number</strong> Nomor urut baris data (dimulai dari 1).
+                                </li>
+                                <li>
+                                    <strong>Account No</strong> Diambil dari field <code>accountNumber</code>.
+                                </li>
+                                <li>
+                                    <strong>Account Name</strong> Diambil dari field <code>shortName</code>.
+                                </li>
+                                <li>
+                                    <strong>Account Type</strong> Diambil dari field <code>accountType</code>.
+                                </li>
+                                <li>
+                                    <strong>Action</strong> Berisi tombol aksi yang akan dijelaskan pada poin berikutnya.
+                                </li>
+                            </ul>
+                        </li>
+                        <li style={{marginBottom: '1rem'}}> Ubah Account Type dalam Tabel sesuai kondisi berikut :
+                            <ul>
+                                <li>
+                                    Tipe account D = Deposito.
+                                </li>
+                                <li>
+                                    Tipe account C = Giro.
+                                </li>
+                                <li>
+                                    Tipe account selain D dan C = Debit.
+                                </li>
+                            </ul>
                         </li>
                         <li style={{marginBottom: '1rem'}}> Buat aksi dalam Tabel sesuai kondisi berikut :
                             <ul>
@@ -98,11 +131,14 @@ const Page = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li style={{marginBottom: '1rem'}}>
-                            Buatlah halaman detail account dan dapat di akses dengan cara klik baris tabel.
+                        <li style={{ marginBottom: '1rem' }}>
+                            Buatlah halaman detail account yang dapat diakses dengan cara klik salah satu baris pada tabel.
+                        </li>
+                        <li style={{ marginBottom: '1rem' }}>
+                            Buatlah fitur search bar untuk menampilkan data pada tabel berdasarkan kata kunci yang dimasukkan.
                         </li>
                         <li>
-                            Buatlah Search Bar dan dapat menampilkan data yang di cari pada tabel.
+                            Implementasikan fungsi ubah dan hapus tanpa menggunakan API, gunakan state sebagai penyimpanan data.
                         </li>
                     </ol>
                     {/* </Paragraph> */}
