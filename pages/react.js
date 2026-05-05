@@ -82,8 +82,8 @@ const Page = () => {
                         </ListItem>
                     </List>
                     <ol style={{marginLeft: "2rem"}}>
-                        <li style={{marginBottom: '1rem'}}> Buat tabel dari data object accountList dengan header Branch
-                            Number, Account No, Account Name, Account Type, Action.
+                        <li style={{marginBottom: '1rem'}}> Buat tabel dari data object accountList dengan header <strong>Branch
+                            Number</strong>,<strong> Account No</strong>,<strong> Account Name </strong>, <strong>Account Type</strong>,<strong> Action </strong>.
                         </li>
                         <li style={{ marginBottom: '1rem' }}>
                             Data tabel diambil dari <code>payload.accountList</code> dengan ketentuan mapping kolom sebagai berikut:
@@ -108,31 +108,44 @@ const Page = () => {
                         <li style={{marginBottom: '1rem'}}> Ubah Account Type dalam Tabel sesuai kondisi berikut :
                             <ul>
                                 <li>
-                                    Tipe account D = Deposito.
+                                    Label tipe account D adalah <strong>Deposito</strong>.
                                 </li>
                                 <li>
-                                    Tipe account C = Giro.
+                                    Label tipe account C adalah <strong>Giro</strong>.
                                 </li>
                                 <li>
-                                    Tipe account selain D dan C = Debit.
+                                    Label tipe account selain D dan C adalah <strong>Debit</strong>.
                                 </li>
                             </ul>
                         </li>
                         <li style={{marginBottom: '1rem'}}> Buat aksi dalam Tabel sesuai kondisi berikut :
                             <ul>
                                 <li>
-                                    Tipe account D ada tombol Hapus dan fungsi nya.
+                                    Aksi pada tipe account D berisi tombol Hapus.
                                 </li>
                                 <li>
-                                    Tipe account C ada tombol Ubah dan Hapus serta fungsi - fungsi nya.
+                                    Aksi pada tipe account C berisi tombol Ubah dan Hapus.
                                 </li>
                                 <li>
-                                    Tipe account selain D dan C tidak ada tombol apapun.
+                                    Aksi pada tipe account selain D dan C tidak berisi tombol apapun.
+                                </li>
+                            </ul>
+                        </li>
+                        <li style={{marginBottom: '1rem'}}> Ketentuan fungsi pada setiap tombol pada kolom Aksi adalah sebagai berikut: :
+                            <ul>
+                                <li>
+                                    Fungsi Tombol Hapus adalah menghapus 1 record data yang dipilih pada tabel tersebut.
+                                </li>
+                                <li>
+                                    Fungsi Tombol Ubah adalah sebagai akses user untuk menghubah data pada 1 record yang terpilih pada tabel tersebut.
                                 </li>
                             </ul>
                         </li>
                         <li style={{ marginBottom: '1rem' }}>
-                            Buatlah halaman detail account yang dapat diakses dengan cara klik salah satu baris pada tabel.
+                            Buatlah halaman detail account yang dapat diakses dengan cara klik salah satu data pada baris pada tabel.
+                        </li>
+                        <li style={{ marginBottom: '1rem' }}>
+                            Buatlah halaman edit account yang dapat diakses dengan cara klik tombol Ubah aksi pada tabel.
                         </li>
                         <li style={{ marginBottom: '1rem' }}>
                             Buatlah fitur search bar untuk menampilkan data pada tabel berdasarkan kata kunci yang dimasukkan.
