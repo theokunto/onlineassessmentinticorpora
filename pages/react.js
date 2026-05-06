@@ -86,7 +86,7 @@ const Page = () => {
                             Number</strong>,<strong> Account No</strong>,<strong> Account Name </strong>, <strong>Account Type</strong>,<strong> Action </strong>.
                         </li>
                         <li style={{ marginBottom: '1rem' }}>
-                            Data tabel diambil dari <code>payload.accountList</code> dengan ketentuan mapping kolom sebagai berikut:
+                            Data tabel diambil dari <code>cifAccountInquiryResponse.payload.customerAccount.accountList</code> dengan ketentuan mapping kolom sebagai berikut:
                             <ul>
                                 <li>
                                     <strong>Number</strong> Nomor urut baris data (dimulai dari 1).
